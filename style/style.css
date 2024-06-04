@@ -189,7 +189,7 @@ span {
 }
 
 .services-container .services-box {
-  flex: 1 1 130rem;
+  flex: 1 1 30rem;
   padding: 3rem 2rem 4rem;
   background-color: var(--secondary-color);
   text-align: center;
@@ -215,4 +215,79 @@ span {
 .services-box p {
   font-size: 1.5rem;
   margin: 1rem 0 3rem;
+}
+
+#portofolio {
+  background-color: var(--secondary-color);
+}
+
+.portofolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portofolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.portofolio-container .portofolio-box {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--primary-color);
+}
+
+.portofolio-box img {
+  width: 100%;
+  transition: 0.4s ease;
+}
+
+.portofolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portofolio-box .caption {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--primary-color));
+  transform: translateX(100%);
+  transition: 0.5s ease;
+}
+
+.portofolio-box:hover .caption {
+  transform: translateX(0);
+}
+
+.caption h4 {
+  font-size: 2rem;
+}
+
+.caption p {
+  font-size: 1.3rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.caption a {
+  width: 5rem;
+  height: 5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption a i {
+  font-size: 3rem;
+  color: var(--tertiary-color);
 }
